@@ -1,23 +1,30 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Your Restaurant Here</title>
+	<link rel="stylesheet" type="text/css" href="css/restaurantStyle.css">
+</head>	
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<body>
+	<div id="menuTitle">
+		<header>
+			<h1>Our Menu</h1>
+		</header>
+	</div>
+	<div class="row">
+			<section id="Menu1" class="col-lg-4 col-md-6 col-sm-12">
+				<h3 class="sectionTitle">Chicken</h3>
+				<p>Spicy jalapeno bacon ipsum dolor amet exercitation beef burgdoggen, kielbasa pig sausage lorem. Frankfurter aute tempor, dolore shoulder strip steak rump voluptate turkey sint ham. Ribeye in ex andouille, ipsum aliquip nisi.</p>
+			</section>
+			<section id="Menu2" class="col-lg-4 col-md-6 col-sm-12">
+				<h3 class="sectionTitle">Beef</h3>
+				<p>Incididunt biltong bacon chuck pork chop pancetta flank. Spare ribs bacon est chuck t-&nbspbone, in jowl jerky irure capicola kevin chicken landjaeger tenderloin labore. Mollit cow duis beef. Id proident leberkas landjaeger chuck</p>
+			</section>
+			<section id="Menu3" class="col-lg-4 col-md-6 col-sm-12">
+				<h3 class="sectionTitle">Sushi</h3>
+				<p>Biltong tenderloin chuck, officia beef ut pancetta enim beef ribs nisi ball tip shankle qui. Irure reprehenderit tenderloin est. Meatball nisi meatloaf, eiusmod chicken sunt non esse est voluptate cupim proident anim spare ribs.</p>
+			</section>
+	</div>
+</body>
+</html>
